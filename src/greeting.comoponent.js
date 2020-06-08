@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './greeting.styles.css'
+// Component.
+import MediaCardComponent from './mediacard.component'
 
 function GreetComponent({name}){
   return(
       <div className="bio-container">
-          <h1>Welcome {name}</h1>
-          <h2>Age: {25 + 1}</h2>
+          <h1>{name}</h1>
+          <h2>Age:<span style={{fontWeight:"bold",fontSize:20,paddingLeft:10}}>{25 + 1}</span></h2>
           <h2>About:</h2>
           <p><strong>Technology</strong>, <strong>Gamer</strong> and <strong>Content Creator</strong></p>
           <br/>
