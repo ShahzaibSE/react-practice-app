@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './greeting.styles.css'
 // Component.
-import MediaCardComponent from './mediacard.component'
+import GateComponent from './gate.component'
 
-function GreetComponent({name}){
+function GreetComponent({name, is_open}){
   return(
       <div className="bio-container">
           <h1>{name}</h1>
@@ -21,6 +21,11 @@ function GreetComponent({name}){
               <li>Python</li>
               <li>NodeJS</li>
           </ul>
+          <div>
+            <h2 style={{paddingBottom:7}}>Gate:</h2>  
+            <GateComponent isOpen={true}></GateComponent>
+            <GateComponent isOpen={false}></GateComponent>
+          </div>
       </div>
   )
 }
