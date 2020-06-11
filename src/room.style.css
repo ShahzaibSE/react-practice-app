@@ -1,0 +1,18 @@
+.room-light {
+    background-color: "yellow";
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+}
+
+.room-dark {
+    background-color: "black";
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+}
+
+.room_container{
+    padding-top: 20px;
+    padding-left: 15px;
+}
